@@ -51,7 +51,7 @@ AI วิเคราะห์ว่า
 
 ### Output
 - [ ] Modulino Pixels
-- [ ] Modulino Buzzer
+- [x] Modulino Buzzer
 - [ ] Modulino LED Matrix
 - [ ] อื่นๆ: ___
 
@@ -106,12 +106,12 @@ AI วิเคราะห์ว่า
 ## ✅ เช็กก่อนสรุปรอบแรก
 
 - [ ] Worksheet W1-W4 ครบ
-- [ ] Edge Impulse project link ใน README
+- [x] Edge Impulse project link ใน README
 - [ ] Model V1 + V2 deploy ได้
 - [ ] Prediction log ≥10 cases
 - [ ] V1 vs V2 comparison
 - [ ] Commit ≥10 ครั้ง
-- [ ] ทุกคนในทีมเป็น Contributor
+- [x] ทุกคนในทีมเป็น Contributor
 
 ---
 
