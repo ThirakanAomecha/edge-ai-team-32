@@ -1,133 +1,140 @@
 <!-- workshop-header -->
 <img width="1347" height="127" alt="Coding Thailand 2026 header" src="https://github.com/user-attachments/assets/ba5cf267-f460-4fb0-b69b-c461ae061a3b" />
 
-# 🤖 Coding Thailand 2026 — Edge AI Workshop
-> **Day 1 Workshop Materials**
-> Arduino UNO Q × Modulino × Edge Impulse
-> Regional Coding & AI Competition — ห้อง Edge AI
+# Team [32] — [Project Name]
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Arduino UNO Q](https://img.shields.io/badge/Arduino-UNO%20Q-00979D)](https://www.arduino.cc/)
-[![Edge Impulse](https://img.shields.io/badge/Edge%20Impulse-Studio-3B4252)](https://edgeimpulse.com/)
+> Coding Thailand 2026 — Edge AI Workshop
+> [Track  B ] — [Basic]
+
+README ของทีมควรทำหน้าที่เป็นหน้าเล่าเรื่องหลัก: คนอ่านควรเข้าใจได้ภายในไม่กี่นาทีว่าทีมกำลังแก้ปัญหาอะไร ใช้ model แบบไหน และ V2 ดีขึ้นจาก V1 ยังไง
 
 ---
 
-## 📋 ภาพรวม Workshop
+## 👥 ทีมเรา
 
-Workshop 6 ชั่วโมง (09:00–17:00) ที่สอนให้นักเรียน
-สร้าง Edge AI prototype ด้วย Arduino UNO Q + Modulino + Edge Impulse จบใน 1 วัน — เพื่อเตรียมไปแข่ง Prototype Day ในวันถัดไป
-
-Repo นี้ควรอ่านเหมือนคู่มือระหว่างเรียน: เปิดดูตามลำดับ, ทำทีละช่วง, แล้วเช็กว่า repo ทีมมีหลักฐานครบตามที่ต้องส่ง
-
-### 🎯 เป้าหมายการเรียนรู้
-
-หลังจบ Day 1 นักเรียนจะ:
-- เข้าใจ pipeline ของ Edge AI: **Data → Train → Deploy → Inference**
-- ออกแบบ class & dataset ที่ลดอคติ (bias-aware)
-- Train โมเดลผ่าน Edge Impulse Studio + Deploy ลง UNO Q
-- จดบันทึก Prediction Log อย่างเป็นระบบ
-- ใช้ Git/GitHub ในการเก็บหลักฐานและ version model
-
-### 📊 เกณฑ์คะแนน Skill Assessment (30 คะแนน)
-
-| หัวข้อ | น้ำหนัก | คะแนนเต็ม |
+| ชื่อ | บทบาท 3H | GitHub |
 |---|---|---|
-| Setup & Safety | 1.25 | 5 |
-| Core Implementation | 2.5 | 10 |
-| Data & Testing | 1.25 | 5 |
-| Debug & Explain | 1.25 | 5 |
-| Participation & Collaboration | 1.25 | 5 |
+| ธีรกานต์ เอิ่มชา | Hacker | @ThirakanAomecha |
+| ณัชฐพงษ์ อารีย์ไทย | Hipster | @username |
+| ณัฐธชา วงสา | Hustler | @username |
 
 ---
 
-## 🗂️ โครงสร้าง Repository
+## 🎯 โจทย์
+
+**Problem:** การคัดแยกชนิดของมะพร้าว (Coconut Classification)
+
+**Target user:** เกษตรกร ผู้ประกอบการ
+
+**Edge AI value:** เพื่อแยกมะพร้าวไปยังช่องที่กำหนดโดยอัตโนมัติ เช่น 
+AI วิเคราะห์ว่า
+- สีเขียวอ่อน
+- ขนาดเล็ก
+- ผิวเรียบ
+จัดเป็น “มะพร้าวน้ำหอม”
+
+---
+
+## 🔬 Approach
+
+### Track เลือก
+- [ ] A — Motion (Modulino Movement)
+- [ ✅ ] B — Vision (USB Webcam)
+- [ ] C — Environment (Thermo + Light + Distance)
+- [ ] D — Audio (USB Microphone)
+
+### Classes
+
+1. _Class 1_
+2. _Class 2_
+3. _Class 3_
+
+### Output
+- [ ] Modulino Pixels
+- [ ] Modulino Buzzer
+- [ ] Modulino LED Matrix
+- [ ] อื่นๆ: ___
+
+---
+
+## 🔗 Links
+
+- **Edge Impulse Project:** https://studio.edgeimpulse.com/studio/1013301
+- **Prototype Video (ถ้ามี):** _ใส่ลิงก์เมื่อพร้อม_
+
+---
+
+## 📊 Results
+
+กรอกเฉพาะตัวเลขที่ทีมวัดได้จริงจากการ train และ test ไม่ต้องเดาตัวเลขให้ดูดี
+
+| Metric | V1 | V2 | Δ |
+|---|---|---|---|
+| Validation accuracy | __% | __% | +/-__% |
+| Test accuracy | __% | __% | +/-__% |
+| Inference time | __ms | __ms | +/-__ms |
+| Model size | __KB | __KB | +/-__KB |
+
+---
+
+## 📂 Repository Structure
 
 ```
-coding-thailand-edge-ai-workshop/
-├── README.md                          ← ตอนนี้อ่านอยู่ที่นี่
-├── docs/                              ← เอกสารหลัก
-│   ├── 01-schedule.md                 ← Timeline 6 ชม.
-│   ├── 02-tracks.md                   ← 4 Tracks ให้เลือก
-│   ├── 03-rubric.md                   ← เกณฑ์ให้คะแนน
-│   ├── 04-git-basics.md               ← Git 101 สำหรับนักเรียน
-│   └── 05-troubleshooting.md          ← ปัญหาที่พบบ่อย
-├── slides/                            ← Slide outline
-│   └── day1-outline.md
-├── worksheets/                        ← ใบงานนักเรียน
+.
+├── README.md                  ← ตอนนี้อ่านอยู่ที่นี่
+├── docs/
+│   ├── setup-notes.md        ← บันทึก setup
+│   ├── track-selection.md    ← เหตุผลเลือก track
+│   ├── v1-vs-v2.md          ← เปรียบเทียบ model
+│   └── issues-and-fixes.md   ← ปัญหาที่เจอ
+├── worksheets/
 │   ├── W1-class-design.md
 │   ├── W2-data-collection-log.md
 │   ├── W3-prediction-log.md
 │   └── W4-idea-canvas.md
-├── labs/                              ← Lab manual แต่ละ track
-│   ├── README.md                      ← ทางเข้า lab ทั้งหมด
-│   ├── common/                        ← คู่มือกลางที่ใช้ทุก track
-│   ├── anchor-demo/                   ← Gesture Wand (demo เปิด)
-│   ├── track-a-motion/                ← Motion classification
-│   ├── track-b-vision/                ← Vision classification
-│   ├── track-c-environment/           ← Multi-sensor fusion
-│   └── track-d-audio/                 ← Audio classification
-├── templates/                         ← Template สำหรับสร้าง repo ทีม
-│   ├── team-repo-template/            ← Template repo ของทีม
-│   └── pull-request-template.md
-└── assets/                            ← รูป diagram
+├── code/
+│   ├── v1/                   ← Code Model V1
+│   └── v2/                   ← Code Model V2
+├── assets/
+│   └── workspace.jpg         ← ภาพ workspace
+└── logs/
+    └── predictions.csv       ← Prediction log (machine-readable)
 ```
 
 ---
 
-## 🚀 เริ่มตรงนี้ (สำหรับนักเรียน)
+## ✅ เช็กก่อนสรุปรอบแรก
 
-ถ้าเพิ่งเข้ามาใน workshop นี้ ให้ทำตามลำดับนี้:
-
-1. ดู [Timeline วันนี้](docs/01-schedule.md) เพื่อรู้ว่าช่วงไหนต้องทำอะไร
-2. เลือก [Track ของทีม](docs/02-tracks.md) ให้เหมาะกับเวลาที่มีและความถนัดของทีม
-3. เรียน [Git พื้นฐาน 15 นาที](docs/04-git-basics.md) ถ้ายังไม่คล่อง Git/GitHub
-4. สร้าง repo ทีมใหม่จาก [Team Repo Template](templates/team-repo-template/)
-5. เปิด [Labs Overview](labs/README.md) แล้วทำตาม lab manual ของ track ที่เลือก
-
-เริ่มจากคัดลอกไฟล์ในโฟลเดอร์ template ไปใส่ repo ใหม่ของทีมบน GitHub แล้วค่อย clone repo นั้นลงเครื่อง
-
-ถ้าติดขัดระหว่างทาง ให้เปิด [Troubleshooting Guide](docs/05-troubleshooting.md) ก่อนเรียก TA
-
-## ✅ ก่อนจบวัน ทีมควรมี
-
-- [ ] Dataset ที่ใช้ train (อยู่ใน `dataset/` หรือ link Edge Impulse project)
-- [ ] Model V1 และ V2 (export จาก Edge Impulse)
-- [ ] Prediction Log อย่างน้อย 10 cases (`logs/predictions.csv`)
-- [ ] Idea Canvas สำหรับ Day 2 (`worksheets/W4-idea-canvas.md`)
-- [ ] README ของทีม อธิบายโจทย์, classes, ผลลัพธ์
-
-## 🧰 ถ้าต้องเตรียม Session
-
-เวลาเตรียม session ให้เริ่มจาก:
-
-1. เตรียมของที่จะแจกแต่ละทีมตาม [docs/00-equipment-checklist.md](docs/00-equipment-checklist.md)
-2. ปรับ [docs/01-schedule.md](docs/01-schedule.md) และ [slides/day1-outline.md](slides/day1-outline.md) ให้ตรงกับบริบทของห้อง
-3. ใช้ [docs/03-rubric.md](docs/03-rubric.md) เป็นเกณฑ์ประเมินกลาง
-
-ไฟล์ที่ใช้ตอนเตรียมห้องและเปิด session:
-- [docs/00-equipment-checklist.md](docs/00-equipment-checklist.md)
-- [slides/day1-outline.md](slides/day1-outline.md)
-- [labs/anchor-demo/README.md](labs/anchor-demo/README.md)
+- [ ] Worksheet W1-W4 ครบ
+- [ ] Edge Impulse project link ใน README
+- [ ] Model V1 + V2 deploy ได้
+- [ ] Prediction log ≥10 cases
+- [ ] V1 vs V2 comparison
+- [ ] Commit ≥10 ครั้ง
+- [ ] ทุกคนในทีมเป็น Contributor
 
 ---
 
-## 🛠️ Tech Stack
+## 🤝 วิธีอัปเดต repo ทีม
 
-- **Hardware**: Arduino UNO Q (Qualcomm Dragonwing QRB2210) + Modulino nodes
-- **ML Platform**: Edge Impulse Studio
-- **Deploy**: Arduino App Lab
-- **Version Control**: Git + GitHub
+```bash
+# Clone repo
+git clone <url>
+cd <repo>
+
+# สร้าง branch ใหม่ก่อนแก้
+git checkout -b feat/your-feature
+
+# แก้ไข แล้ว commit
+git add .
+git commit -m "docs: เพิ่มชื่อทีมและลิงก์โปรเจกต์"
+git push -u origin feat/your-feature
+
+# เปิด Pull Request บน GitHub
+```
 
 ---
 
 ## 📜 License
 
-MIT — ใช้สอนต่อ ปรับแต่งได้อย่างเสรี
-
-## 🙏 Credits
-
-จัดทำสำหรับ **โครงการ Coding Thailand 2026 — AI Inspires the Future** โดย DEPA และทีมงานวิทยากร
-
----
-
-**Questions?** เปิด [Issue](https://github.com/SANCHAIE/coding-thailand-edge-ai-workshop/issues) หรือ [Discussion](https://github.com/SANCHAIE/coding-thailand-edge-ai-workshop/discussions)
+MIT
