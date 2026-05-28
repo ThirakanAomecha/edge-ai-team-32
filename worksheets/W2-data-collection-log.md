@@ -10,10 +10,10 @@
 
 ## ข้อมูลทีม + Edge Impulse
 
-- **ชื่อทีม:** _________________
+- **ชื่อทีม:** Cocobyte
 - **Edge Impulse Project URL:**
   ```
-  https://studio.edgeimpulse.com/studio/XXXXX
+  https://studio.edgeimpulse.com/studio/1013301
   ```
 
 ---
