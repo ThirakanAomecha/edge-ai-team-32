@@ -39,7 +39,7 @@ AI วิเคราะห์ว่า
 
 ### Track เลือก
 - [ ] A — Motion (Modulino Movement)
-- [ ✅ ] B — Vision (USB Webcam)
+- [✅] B — Vision (USB Webcam)
 - [ ] C — Environment (Thermo + Light + Distance)
 - [ ] D — Audio (USB Microphone)
 
