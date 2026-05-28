@@ -126,7 +126,7 @@ cd <repo>
 git checkout -b feat/your-feature
 
 # แก้ไข แล้ว commit
-
+git add .
 git commit -m "docs: เพิ่มชื่อทีมและลิงก์โปรเจกต์"
 git push -u origin feat/your-feature
 
