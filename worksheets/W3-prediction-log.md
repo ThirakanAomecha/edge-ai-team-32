@@ -30,16 +30,16 @@
 
 | # | Case ที่ทดสอบ | Predicted Class | Confidence | Response Time | Output/Action | Actual Class | ถูก/ผิด | หมายเหตุ |
 |---|---|---|---|---|---|---|---|---|
-| 1 | ตัวอย่าง: เดินช้าๆ ในห้อง | เดิน | 0.89 | 180 ms | Pixels เขียว | เดิน | ✅ ถูก | ดี |
-| 2 | ตัวอย่าง: นั่งลงเร็วๆ | ล้ม | 0.62 | 210 ms | Buzzer ดัง | นั่ง | ❌ ผิด | confidence ไม่สูง, classifier confuse กับการเปลี่ยน posture เร็ว |
-| 3 | | | | | | | | |
-| 4 | | | | | | | | |
-| 5 | | | | | | | | |
-| 6 | | | | | | | | |
-| 7 | | | | | | | | |
-| 8 | | | | | | | | |
-| 9 | | | | | | | | |
-| 10 | | | | | | | | |
+| 1 | กล้องห่าง + สายพานช้า | CO | 0.78 | 9 ms | Buzz beeper: Green | CO | ✅ ถูก | ดี |
+| 2 | กล้องใกล้ + สายพานช้า | CM | 0.74 | 8 ms | Buzz hopper: Blue | CM | ✅ ถูก | ดี |
+| 3 | กล้องห่าง + สายพานเร็ว | BG | 0.71 | 10 ms | Buzz zapper: Red | BG | ✅ ถูก | พอใช้ |
+| 4 | กล้องใกล้ + สายพานเร็ว | CO | 0.83 | 8 ms | Buzz beeper: Green | CO | ✅ ถูก | ดี |
+| 5 | กล้องห่าง + วัตถุเบลอ | CM | 0.69 | 10 ms | Buzz hopper: Blue | BG | ❌ ผิด | ปรับปรุงที่ motion blur |
+| 6 | กล้องใกล้ + แสงน้อย | BG | 0.73 | 9 ms | Buzz zapper: Red | BG | ✅ ถูก | พอใช้ |
+| 7 | สายพานเร็วมาก | CO | 0.72 | 10 ms | Buzz beeper: Green | CM | ❌ ผิด | ปรับปรุงที่ classifier confuse |
+| 8 | กล้องห่าง + ฉากหลังรก | BG | 0.77 | 9 ms | Buzz zapper: Red | BG | ✅ ถูก | ดี |
+| 9 | กล้องใกล้ + มุมเอียง | CM | 0.75 | 8 ms | Buzz hopper: Blue | CM | ✅ ถูก | พอใช้ |
+| 10 | สายพานช้า + วัตถุชัด | CO | 0.81 | 8 ms | Buzz beeper: Green | CO | ✅ ถูก | ดี |
 
 ### V1 Summary
 
