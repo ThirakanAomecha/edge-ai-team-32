@@ -22,7 +22,7 @@
 - **เวลาเริ่มทดสอบ:** 14:35
 - **เวลาเสร็จ:** 14:50
 - **Model link ใน Edge Impulse:** [ei-team-32-vision-v1-arduino-1.0.13-impulse-#1.zip](https://github.com/user-attachments/files/28403670/ei-team-32-vision-v1-arduino-1.0.13-impulse-.1.zip)
-- **Output ที่ใช้ทดสอบ:** _________________
+- **Output ที่ใช้ทดสอบ:** Aduino UNO Q
 - **Threshold ที่ใช้ (ถ้ามี):** _________________
 
 ### Prediction Log V1
@@ -44,37 +44,35 @@
 
 | Metric | ค่า |
 |---|---|
-| Total cases | _____ |
-| Correct | _____ |
-| Wrong | _____ |
-| **Accuracy** | _____% |
-| Average confidence (ถูก) | _____ |
-| Average confidence (ผิด) | _____ |
-| Average response time | _____ ms |
+| Total cases | 10 |
+| Correct | 8 |
+| Wrong | 2 |
+| **Accuracy** | 80% |
+| Average confidence (ถูก) | 0.77 |
+| Average confidence (ผิด) | 0.71 |
+| Average response time | 8.9 ms |
 
 ### Confusion Pattern V1
 
 ระบุ pattern ที่ผิด:
 
 ```
-1. _________________________________________________
-   ตัวอย่าง: "นั่งลงเร็วๆ" ถูกจัดเป็น "ล้ม" 3 ครั้งจาก 5
-
-2. _________________________________________________
-
-3. _________________________________________________
-```
-
+1. วัตถุเคลื่อนที่เร็วหรือเกิด motion blur ทำให้ classifier สับสน
+   ตัวอย่าง: "กล้องห่าง + วัตถุเบลอ" ถูกจัดเป็น "CM" แทน "BG"
+2. สายพานเร็วมากทำให้ object detect ไม่ทัน
+   ตัวอย่าง: "สายพานเร็วมาก" ถูกจัดเป็น "CO" แทน "CM"
+3. มุมกล้องหรือสภาพแสงมีผลต่อความแม่นยำ
+   ตัวอย่าง: "กล้องใกล้ + แสงน้อย" confidence ลดลงและมีโอกาส classify ผิด
 ---
 
 ## 🔄 Iteration Plan — แก้อะไรใน V2?
 
 จาก V1 analysis จะปรับอะไร? (ทำได้หลายข้อ)
 
-- [ ] เก็บข้อมูลเพิ่มใน class ที่ผิดบ่อย
-  - **Class:** _________________
-  - **จำนวน:** _____ samples
-  - **Variation ใหม่:** _________________
+- [x] เก็บข้อมูลเพิ่มใน class ที่ผิดบ่อย
+  - **Class:** BG, CM
+  - **จำนวน:** 120 samples
+  - **Variation ใหม่:** motion blur, แสงน้อย, มุมเอียง, สายพานเร็ว
 
 - [ ] แก้ class definition
   - **Class:** _________________
