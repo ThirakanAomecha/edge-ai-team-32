@@ -70,10 +70,10 @@ AI วิเคราะห์ว่า
 
 | Metric | V1 | V2 | Δ |
 |---|---|---|---|
-| Validation accuracy | 72.5% | __% | +/-__% |
-| Test accuracy |  66.67% | 68.52% | +/-__% |
-| Inference time | 8 ms |  ms | +/-__ms |
-| Model size | 119.2 KB | __KB | +/-__KB |
+| Validation accuracy | 72.5% | 73.9% | +1.4% |
+| Test accuracy |  66.67% | 68.52% | +1.85% |
+| Inference time | 8 ms |  8 ms | 0 ms |
+| Model size | 119.2 KB | 119.2 KB | 0 KB |
 
 ---
 
