@@ -1,4 +1,4 @@
-<!-- workshop-header -->
+[ei-team-32-vision-v1-arduino-1.0.13-impulse-#1.zip](https://github.com/user-attachments/files/28403676/ei-team-32-vision-v1-arduino-1.0.13-impulse-.1.zip)<!-- workshop-header -->
 <img width="1347" height="127" alt="Coding Thailand 2026 header" src="https://github.com/user-attachments/assets/ba5cf267-f460-4fb0-b69b-c461ae061a3b" />
 
 # 📝 Worksheet W3 — Prediction Log
@@ -19,10 +19,9 @@
 
 ### Setup
 
-- **เวลาเริ่มทดสอบ:** _____
-- **เวลาเสร็จ:** _____
-- **Model link ใน Edge Impulse:** _________________
-- **สภาพแวดล้อมที่ทดสอบ:** _________________
+- **เวลาเริ่มทดสอบ:** 14:35
+- **เวลาเสร็จ:** 14:50
+- **Model link ใน Edge Impulse:** [ei-team-32-vision-v1-arduino-1.0.13-impulse-#1.zip](https://github.com/user-attachments/files/28403670/ei-team-32-vision-v1-arduino-1.0.13-impulse-.1.zip)
 - **Output ที่ใช้ทดสอบ:** _________________
 - **Threshold ที่ใช้ (ถ้ามี):** _________________
 
