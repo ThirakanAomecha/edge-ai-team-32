@@ -105,10 +105,10 @@ AI วิเคราะห์ว่า
 
 ## ✅ เช็กก่อนสรุปรอบแรก
 
-- [ ] Worksheet W1-W4 ครบ
+- [x] Worksheet W1-W4 ครบ
 - [x] Edge Impulse project link ใน README
 - [x] Model V1 + V2 deploy ได้
-- [ ] Prediction log ≥10 cases
+- [x] Prediction log ≥10 cases
 - [x] V1 vs V2 comparison
 - [x] Commit ≥10 ครั้ง
 - [x] ทุกคนในทีมเป็น Contributor
