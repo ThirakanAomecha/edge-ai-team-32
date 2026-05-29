@@ -45,9 +45,9 @@ AI วิเคราะห์ว่า
 
 ### Classes
 
-1. _Class 1_
-2. _Class 2_
-3. _Class 3_
+1. CM
+2. CO
+3. BG          
 
 ### Output
 - [ ] Modulino Pixels
